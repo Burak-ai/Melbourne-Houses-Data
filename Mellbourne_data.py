@@ -25,4 +25,3 @@ print("The predictions are")
 print(melbourne_model.predict(X.head()))
 
 
-
