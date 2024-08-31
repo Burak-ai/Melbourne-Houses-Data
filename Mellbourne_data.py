@@ -13,7 +13,6 @@ y = melbourne_data.Price
 melbourne_features = ['Rooms', 'Bathroom', 'Landsize', 'BuildingArea', 
                       'YearBuilt', 'Lattitude', 'Longtitude']
 X = melbourne_data[melbourne_features]
-#                                   same results each run
 melbourne_model = DecisionTreeRegressor(random_state=1)
 melbourne_model.fit(X, y)
 
