@@ -31,9 +31,9 @@ print(melbourne_model.predict(X.head()))
 train_X, val_X, train_y, val_y = train_test_split(X, y, random_state = 0)
 
 melbourne_model = DecisionTreeRegressor()
-
+# Define
 melbourne_model.fit(train_X, train_y)
-
+# Fit
 val_predictions = melbourne_model.predict(val_X)
 print(mean_absolute_error(val_y, val_predictions))
 
