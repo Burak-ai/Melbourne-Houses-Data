@@ -5,7 +5,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 
 
-
 df = pd.read_csv("melb_data.csv")
 #               na = not available
 melbourne_data = df.dropna(axis=0)
