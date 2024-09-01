@@ -47,6 +47,7 @@ def get_mae(max_leaf_nodes, train_X, val_X, train_y, val_y):
     mae = mean_absolute_error(val_y, preds_val)
     return(mae)
 
+
 # Compare
 for max_leaf_nodes in [5, 50, 500, 5000]:
     my_mae = get_mae(max_leaf_nodes, train_X, val_X, train_y, val_y)
@@ -56,5 +57,4 @@ forest_model = RandomForestRegressor(random_state=1)
 forest_model.fit(train_X, train_y)
 melb_preds = forest_model.predict(val_X)
 print(mean_absolute_error(val_y, melb_preds))
-
 
